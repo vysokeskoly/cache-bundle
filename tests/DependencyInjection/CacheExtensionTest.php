@@ -5,7 +5,6 @@ namespace VysokeSkoly\CacheBundle\DependencyInjection;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use VysokeSkoly\CacheBundle\Cache\MemcachedFactory;
-use VysokeSkoly\CacheBundle\Cache\MemcacheFactory;
 
 class CacheExtensionTest extends TestCase
 {
@@ -55,9 +54,6 @@ class CacheExtensionTest extends TestCase
             $definition = $this->containerBuilder->getDefinition($serviceName);
             $this->assertFalse($definition->isPublic());
             $factoryClass = MemcachedFactory::class;
-            if (!class_exists(\Memcached::class)) {
-                $factoryClass = MemcacheFactory::class;
-            }
 
             $this->assertSame([$factoryClass, 'get'], $definition->getFactory());
         }
