@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use VysokeSkoly\CacheBundle\Cache\MemcachedFactory;
 use VysokeSkoly\CacheBundle\Cache\MemcacheFactory;
 
-class CacheExtension extends Extension
+class VysokeSkolyCacheExtension extends Extension
 {
     public function load(array $config, ContainerBuilder $container): void
     {

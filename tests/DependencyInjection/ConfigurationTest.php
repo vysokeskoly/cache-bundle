@@ -11,7 +11,7 @@ class ConfigurationTest extends TestCase
     {
         $dumper = new YamlReferenceDumper();
         $reference = <<<CONFIG
-            vysokeskoly_cache:
+            vysoke_skoly_cache:
                 connections:          # Required
 
                     # Prototype
