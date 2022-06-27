@@ -6,7 +6,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use VysokeSkoly\CacheBundle\Cache\MemcachedFactory;
-use VysokeSkoly\CacheBundle\Cache\MemcacheFactory;
 
 class CacheExtension extends Extension
 {
@@ -24,10 +23,6 @@ class CacheExtension extends Extension
     {
         $classDefinition = \Memcached::class;
         $factoryClass = MemcachedFactory::class;
-        if (!class_exists(\Memcached::class)) {
-            $classDefinition = \Memcache::class;
-            $factoryClass = MemcacheFactory::class;
-        }
 
         $service = new Definition($classDefinition);
         $service->setFactory([$factoryClass, 'get']);
