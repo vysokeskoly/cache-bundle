@@ -6,10 +6,10 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use VysokeSkoly\CacheBundle\Cache\MemcachedFactory;
 
-class CacheExtensionTest extends TestCase
+class VysokeSkolyCacheExtensionTest extends TestCase
 {
     protected ContainerBuilder $containerBuilder;
-    protected CacheExtension $extension;
+    protected VysokeSkolyCacheExtension $extension;
     protected array $config;
 
     protected function setUp(): void
@@ -37,7 +37,7 @@ class CacheExtensionTest extends TestCase
             ],
         ];
 
-        $this->extension = new CacheExtension();
+        $this->extension = new VysokeSkolyCacheExtension();
         $this->containerBuilder = new ContainerBuilder();
         $this->containerBuilder->registerExtension($this->extension);
         $this->extension->load([$this->config], $this->containerBuilder);
