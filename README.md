@@ -1,6 +1,8 @@
 CacheBundle
 ==============
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/vysokeskoly/cache-bundle.svg)](https://packagist.org/packages/vysokeskoly/cache-bundle)
+[![License](https://img.shields.io/packagist/l/vysokeskoly/cache-bundle.svg)](https://packagist.org/packages/vysokeskoly/cache-bundle)
 [![Checks](https://github.com/vysokeskoly/cache-bundle/actions/workflows/checks.yaml/badge.svg)](https://github.com/vysokeskoly/cache-bundle/actions/workflows/checks.yaml)
 [![Build](https://github.com/vysokeskoly/cache-bundle/actions/workflows/php-checks.yaml/badge.svg)](https://github.com/vysokeskoly/cache-bundle/actions/workflows/php-checks.yaml)
 
