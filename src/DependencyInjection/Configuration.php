@@ -9,7 +9,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('vysokeskoly_cache');
+        $treeBuilder = new TreeBuilder('vysoke_skoly_cache');
         $rootNode = $treeBuilder->getRootNode();
 
         $rootNode

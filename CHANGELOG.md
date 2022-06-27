@@ -3,6 +3,7 @@
 <!-- There should always be "Unreleased" section at the beginning. -->
 
 ## Unreleased
+- Fix naming of classes for bundle loading
 
 ## 6.0.0 - 2022-06-27
 - Allow Symfony 6
