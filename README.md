@@ -43,4 +43,4 @@ Add *CacheBundle* to the list of loaded bundles. Configure required parameters f
 
 ### Step3
 
-Use created services. From example above *vs.cache.data* and *vs.cache.session*.
+Use created services. From example above *vysokeskoly.cache.data* and *vysokeskoly.cache.session*.
