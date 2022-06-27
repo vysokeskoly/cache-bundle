@@ -1,0 +1,54 @@
+{
+    "name": "vysokeskoly/cache-bundle",
+    "type": "symfony-bundle",
+    "description": "Provides memcached services with proper usage of connection pool",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "ext-memcached": "*",
+        "symfony/config": "^4.2 || ^5.0",
+        "symfony/dependency-injection": "^4.2 || ^5.0",
+        "symfony/http-kernel": "^4.2 || ^5.0"
+    },
+    "require-dev": {
+        "lmc/coding-standard": "^3.2",
+        "php-mock/php-mock-phpunit": "^2.0",
+        "symfony/yaml": "^4.2 || ^5.0",
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12.88",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-phpunit": "^0.12.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "VysokeSkoly\\CacheBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VysokeSkoly\\CacheBundle\\": "tests/"
+        }
+    },
+    "scripts": {
+        "all": [
+            "@analyze",
+            "@tests"
+        ],
+        "analyze": [
+            "@cs",
+            "@phpstan"
+        ],
+        "cs": "vendor/bin/ecs check --ansi -- src/ tests/ ecs.php",
+        "phpstan": "vendor/bin/phpstan analyze ./src ./tests -c phpstan.neon --ansi --level 7",
+        "tests": "vendor/bin/phpunit",
+        "fix": "vendor/bin/ecs check --ansi --clear-cache --fix -- src/ tests/ ecs.php"
+    },
+    "config": {
+        "secure-http": false,
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
+    }
+}
