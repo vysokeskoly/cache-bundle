@@ -26,7 +26,7 @@ Add *CacheBundle* to the list of loaded bundles. Configure required parameters f
 
 **config.yml**
 
-    vysokeskoly_cache:
+    vysoke_skoly_cache:
         connections:
             data:
                 persistent_id: vs
