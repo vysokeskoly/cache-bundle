@@ -1,8 +1,17 @@
 <?php declare(strict_types=1);
 
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symplify\EasyCodingStandard\Config\ECSConfig;
 
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import(__DIR__ . '/vendor/lmc/coding-standard/ecs.php');
-    $containerConfigurator->import(__DIR__ . '/vendor/lmc/coding-standard/ecs-8.1.php');
-};
+$doctrineCacheBridge = [
+    'src/FrontBundle/Adapter/DoctrineCacheBridge.php',
+];
+
+return ECSConfig::configure()
+    ->withPaths([
+        __DIR__ . '/src',
+        __DIR__ . '/tests',
+    ])
+    ->withRootFiles()
+    ->withSets([
+        __DIR__ . '/vendor/lmc/coding-standard/ecs.php',
+    ]);

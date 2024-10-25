@@ -3,6 +3,8 @@
 <!-- There should always be "Unreleased" section at the beginning. -->
 
 ## Unreleased
+- Add Symfony 7 support
+- Drop Symfony 5 support
 
 ## 6.0.1 - 2022-06-27
 - Fix naming of classes for bundle loading

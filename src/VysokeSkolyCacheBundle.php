@@ -4,6 +4,4 @@ namespace VysokeSkoly\CacheBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class VysokeSkolyCacheBundle extends Bundle
-{
-}
+class VysokeSkolyCacheBundle extends Bundle {}
