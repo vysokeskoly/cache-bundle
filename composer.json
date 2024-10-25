@@ -6,16 +6,16 @@
     "require": {
         "php": "^8.1",
         "ext-memcached": "*",
-        "symfony/config": "^5.0 || ^6.0",
-        "symfony/dependency-injection": "^5.0 || ^6.0",
-        "symfony/http-kernel": "^5.0 || ^6.0"
+        "symfony/config": "^6.0 || ^7.0",
+        "symfony/dependency-injection": "^6.0 || ^7.0",
+        "symfony/http-kernel": "^6.0 || ^7.0"
     },
     "require-dev": {
-        "lmc/coding-standard": "^3.3",
+        "lmc/coding-standard": "^4.1",
         "php-mock/php-mock-phpunit": "^2.0",
-        "symfony/yaml": "^5.0 || ^6.0",
-        "phpunit/phpunit": "^9.5",
-        "phpstan/phpstan": "^1.7",
+        "symfony/yaml": "^6.0 || ^7.0",
+        "phpunit/phpunit": "^10.5.37",
+        "phpstan/phpstan": "^1.12.7",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-phpunit": "^1.1"
     },
