@@ -3,6 +3,8 @@
 <!-- There should always be "Unreleased" section at the beginning. -->
 
 ## Unreleased
+
+## 6.1.0 - 2024-10-25
 - Add Symfony 7 support
 - Drop Symfony 5 support
 
